@@ -1,34 +1,49 @@
 /* Styling for Nav bar. Bg color, link color etc */
-.navbar-inner {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #2E435E;
-  background-image: -moz-linear-gradient(top, #2e435e, #172e50);
-  background-image: -ms-linear-gradient(top, #2e435e, #172e50);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2e435e), to(#172e50));
-  background-image: -webkit-linear-gradient(top, #2e435e, #172e50);
-  background-image: -o-linear-gradient(top, #2e435e, #172e50);
-  background-image: linear-gradient(top, #2e435e, #172e50);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+@font-face {
+    font-family: 'Telex';
+    src: url('./fonts/Telex-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Alegreya SC';
+    src: url('./fonts/AlegreyaSC-Regular-webfont.eot');
+    src: url('./fonts/AlegreyaSC-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/AlegreyaSC-Regular-webfont.woff') format('woff'),
+         url('./fonts/AlegreyaSC-Regular-webfont.ttf') format('truetype'),
+         url('./fonts/AlegreyaSC-Regular-webfont.svg#AlegreyaSCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-.navbar .nav > li > a { color: #49AFCD; }
-.navbar .divider-vertical { border-right: 1px solid #4D4D4D; }
-.navbar { margin-bottom: 4em; } 
 
+.blog-header {
+  position: relative;
+  padding: 40px 0;
+}
+
+
+.navbar .nav > li > a { color: #FF0F00; }
+.navbar .divider-vertical { border-right: 1px solid #4D4D4D; }
+.navbar { margin-bottom: 4em; background-color: rgba(0,0,0,0)} 
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+    color: #0A5693;
+    background-color: #E9EFF6
+} 
 
 /* Styling for elements */
-body { font-size: 100%; }
-p { font-size: 100%; line-height: 1.6em; margin-top: 0.8em; margin-bottom: 0.8em; }
+a {color: #0A5693} 
+body {font-family: 'Telex'; font-size: 15px;}
+p { font-family: 'Telex'; font-size: 14px; line-height: 20px; margin-top: 0.8em; margin-bottom: 0.8em; }
 li { line-height: 1.6em; }
-h3 { margin-top: 2.5em; }
+h3 { font-family: 'Alegreya SC'; font-size: 28p; font-weight: normal}
+h2 { font-family: 'Alegreya SC'; font-size: 32px; color #0A5693; font-weight: normal }
+h1 { font-family: 'Alegreya SC'; font-size: 40px; font-weight: normal}
+h1,h2,h3,h4,h5,h6 { color: #000001}
 .table th, .table td { line-height: 1.3em; }
 
 /* Styling for articles */
@@ -73,3 +88,14 @@ h3 { margin-top: 2.5em; }
 .social a[href*='rss.xml']:before {content: url('./images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='stackoverflow.com']:before {content: url('./images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='twitter.com']:before {content: url('./images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
+
+
+#blog-footer{ display: table; width: 100%}
+
+@media(max-width: 768px){
+#socialist { display: table-footer-group;}
+#colophon { display: table-header-group;}
+#sitelinks { display: table-footer-group;}
+}
+
+

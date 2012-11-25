@@ -55,8 +55,8 @@
     </div> {# End content #}
 </div>
 
-<footer>
-<div class="container-fluid">
+<!--footer-->
+<div class="container">
   <div class="well" style="background-color: #E9EFF6">
     <div id="blog-footer">
       <div class="row-fluid">
@@ -71,7 +71,7 @@
 	    {% endfor %}
 	  </ul>
 	</div>
-
+	{% endif %}
 	{% include "colophon.html" %}
         {% if LINKS %}
         <div class="links span3" align="center">
@@ -93,13 +93,14 @@
     <p><a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ AUTHOR }} 2012</p>
 
   </div> <!--end of well -->
-</div>
-</footer>
+</div> <!--end of container -->
+
+<!--/footer-->
 
 
 <script src="./theme/jquery-min.js"></script>
 <script src="./theme/bootstrap.js"></script>
 {% include "analytics.html" %}
-{% include "github.html" %} 
+
 </body>
 </html>
