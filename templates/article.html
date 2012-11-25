@@ -1,17 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
     <div class='article'>
-        <div class="content-title">
-            <h1>{{ article.title }}</h1>
-            {% include "metadata.html" %}
-        </div>
-	
-        <div>{{ article.content }}</div>
-	
-        <hr>
-    	   
-        <h2>Comments</h2>
-	{% include "twitter.html" %}
-	{% include 'disqus.html' %}
+      <div class="row-fluid">
+           <div class="content-title span9">
+             <h2>{{ article.title }}</h2>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+	{% include "article-sidebar.html" %}
+      </div>
+      
+      <div class="span8 offset2">
+	{{ article.content }}
+	<hr />
+      </div>
+    </div>
+      <h3>Comments</h3>
+   
+    {% include 'disqus.html' %}
+      
     </div>
 {% endblock %}

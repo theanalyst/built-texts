@@ -88,7 +88,21 @@
           </ul>
         </div>
         {% endif %}
- 
+	<div class="site-nav span3" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+	    <li><a href="{{ SITEURL }}/tags.html">Tags</a></li>
+	    <li><a href="{{ SITEURL }}/{{ FEED }}" rel="alternate">Atom Feed</a></li>
+	    {% if FEED_RSS %}
+	    <li> <a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">RSS Feed</a></li>
+	    {% endif %}
+	  </ul>
+
+        </div>
+
       </div> <!--end of fluid row-->
     </div> <!--end of blog-footer-->
     <hr />
