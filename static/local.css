@@ -18,11 +18,29 @@
 
 }
 
+@font-face {
+    font-family: 'Bitter';
+    src: url('./fonts/Bitter-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Gudea';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./fonts/Gudea-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Gudea';
+    font-style: italic;
+    src: url('./fonts/Gudea-Italic.otf');
+}
+
 
 .blog-header {
   position: relative;
   padding: 16px 0;
-  background-color:#f5f5f5;
+  background-color:#E9EFF6;
 }
 
 .navbar .nav > li > a { color: #FF0F00; }
@@ -41,8 +59,8 @@
 }
 /* Styling for elements */
 a {color: #0A5693} 
-body {font-family: 'Telex'; font-size: 15px;}
-p { font-family: 'Telex'; font-size: 14px; line-height: 20px; margin-top: 0.8em; margin-bottom: 0.8em; }
+body {font-family: 'Gudea'; font-size: 16px; line-height:20px}
+p { font-family: 'Gudea','Bitter','Telex'; font-size: 16px; line-height: 20px; margin-top: 0.8em; margin-bottom: 0.8em; text-align: justify}
 li { line-height: 1.6em; }
 h3 { font-family: 'Alegreya SC'; font-weight: normal}
 h2 { font-family: 'Alegreya SC'; color: #0A5693; font-weight: normal }
