@@ -1,41 +1,31 @@
 /* Styling for Nav bar. Bg color, link color etc */
-@font-face {
-    font-family: 'Telex';
-    src: url('./fonts/Telex-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
+/* font-face useful for local testing */
+/*
 @font-face {
     font-family: 'Alegreya SC';
-    src: url('./fonts/AlegreyaSC-Regular-webfont.eot');
-    src: url('./fonts/AlegreyaSC-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/AlegreyaSC-Regular-webfont.woff') format('woff'),
-         url('./fonts/AlegreyaSC-Regular-webfont.ttf') format('truetype'),
-         url('./fonts/AlegreyaSC-Regular-webfont.svg#AlegreyaSCRegular') format('svg');
+    src: url('./font/AlegreyaSC-Regular-webfont.eot');
+    src: url('./font/AlegreyaSC-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/AlegreyaSC-Regular-webfont.woff') format('woff'),
+         url('./font/AlegreyaSC-Regular-webfont.ttf') format('truetype'),
+         url('./font/AlegreyaSC-Regular-webfont.svg#AlegreyaSCRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'Bitter';
-    src: url('./fonts/Bitter-Regular.otf');
 }
 
 @font-face {
     font-family: 'Gudea';
     font-weight: normal;
     font-style: normal;
-    src: url('./fonts/Gudea-Regular.otf');
+    src: url('./font/Gudea-Regular.otf');
 }
 
 @font-face {
     font-family: 'Gudea';
     font-style: italic;
-    src: url('./fonts/Gudea-Italic.otf');
+    src: url('./font/Gudea-Italic.otf');
 }
-
+*/
 
 .blog-header {
   position: relative;
@@ -50,22 +40,27 @@
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
     color: #0A5693;
-    background-color:#bbb 
-/*    background-color:#E9EFF6*/
-} 
+    background-color:#bbb; 
+/*    background-color:#E9EFF6; Initial colour to match bottom */
+}
+
+
 #blog-nav{
     padding: 5px 0;
-    font-size:15px;
+    font-size:16px;
     margin-top: 10px;
 }
+
+ul#sitelinks.nav.nav-list > li > a >i {
+    color: #1f334b;}
 /* Styling for elements */
 a {color: #0A5693} 
-body {font-family: 'Gudea'; font-size: 16px; line-height: 1.2em}
-p { font-family: 'Gudea','Bitter','Telex'; font-size: 16px; line-height: 1.2em; margin-top: 0.8em; margin-bottom: 0.8em; text-align: justify}
+body {font-family: 'Gudea', 'Gill Sans', 'Arial'; font-size: 16px; line-height: 1.2em}
+p { font-family: 'Gudea', 'Gill Sans', 'Arial'; font-size: 16px; line-height: 1.2em; margin-top: 0.8em; margin-bottom: 0.8em; text-align: justify}
 li { line-height: 1.6em; }
-h3 { font-family: 'Alegreya SC'; font-weight: normal}
-h2 { font-family: 'Alegreya SC'; color: #0A5693; font-weight: normal; font-size:32 px }
-h1 { font-family: 'Alegreya SC'; font-weight: normal; font-size: 42px}
+h3 { font-family: 'Alegreya SC', 'Garamond', 'Georgia'; font-weight: normal}
+h2 { font-family: 'Alegreya SC', 'Garamond', 'Georgia' ; font-weight: normal; font-size:32 px }
+h1 { font-family: 'Alegreya SC', 'Garamond', 'Georgia' ; font-weight: normal; font-size: 42px}
 h1,h2,h3,h4,h5,h6 { color: #000001; margin-bottom: 0px}
 .table th, .table td { line-height: 1.3em; }
 
@@ -94,7 +89,7 @@ h1,h2,h3,h4,h5,h6 { color: #000001; margin-bottom: 0px}
 .summary { margin-bottom: 2em; margin-top: 0.8em; font-size: 16px; line-height: 1.2em }
 .summary pre { display: none; }
 
-/* Styling for Sidebar */
+/* Styling for Sidebar 
 .social a[href*='activestate.com']:before {content: url('./images/icons/activestate.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='atom.xml']:before {content: url('./images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='bitbucket.org']:before {content: url('./images/icons/bitbucket.png'); margin-right: 2px; vertical-align: -3px;}
@@ -110,7 +105,7 @@ h1,h2,h3,h4,h5,h6 { color: #000001; margin-bottom: 0px}
 .social a[href*='rss.xml']:before {content: url('./images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='stackoverflow.com']:before {content: url('./images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='twitter.com']:before {content: url('./images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
-
+*/
 
 #blog-footer{ display: table; width: 100%}
 

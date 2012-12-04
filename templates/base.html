@@ -16,7 +16,8 @@
     <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet">
-
+    <link href="{{ SITEURL }}/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -69,8 +70,12 @@
 	      Social
 	    </li>
 	    {% for name,link in SOCIAL %}
-	    <li><a href="{{ link }}">{{ name }}</a></li>
+	    <li><a href="{{ link }}"><i class="icon-{{ name }}" style="color: #1f334b"></i>{{name}}</a></li>
 	    {% endfor %}
+            {% if EMAIL%}
+            <a href="mailto:{{ EMAIL}}"><i class="icon-envelope" style="color: #1f334b" ></i> email</a>
+            {% endif %}
+
 	  </ul>
 	</div>
 	{% endif %}
@@ -89,16 +94,25 @@
         </div>
         {% endif %}
 	<div class="site-nav span2" align="center">
-          <ul class="nav nav-list">
+          <ul class="nav nav-list" id="site-links">
             <li class="nav-header"> 
               Site
             </li>
-            <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
-	    <li><a href="{{ SITEURL }}/tags.html">Tags</a></li>
-	    <li><a href="{{ SITEURL }}/{{ FEED }}" rel="alternate">Atom Feed</a></li>
+            <li><a href="{{ SITEURL }}"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="{{ SITEURL }}/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="{{ SITEURL }}/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
 	    {% if FEED_RSS %}
-	    <li> <a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">RSS Feed</a></li>
+	    <li> <a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
 	    {% endif %}
+            <li><a href="{{ SITEURL }}/{{ FEED }}" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
 	  </ul>
 
         </div>
@@ -106,7 +120,12 @@
       </div> <!--end of fluid row-->
     </div> <!--end of blog-footer-->
     <hr />
-    <p><a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ AUTHOR }} 2012</p>
+    <p align="center"><a href="{{ SITEURL }}">{{ SITENAME }}</a>
+      &copy; {{ AUTHOR }}
+    Powered by <a href="github.com/getpelican/pelican">Pelican</a> and
+        <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>. 
+        Icons by <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> and 
+        <a href="http://gregoryloucas.github.com/Font-Awesome-More">Font Awesome More</a></p>
 
   </div> <!--end of well -->
 </div> <!--end of container -->
@@ -114,8 +133,8 @@
 <!--/footer-->
 
 
-<script src="./theme/jquery-min.js"></script>
-<script src="./theme/bootstrap.js"></script>
+<script src="./theme/js/jquery-1.8.3.min.js"></script>
+<script src="./theme/js/bootstrap.min.js"></script>
 {% include "analytics.html" %}
 
 </body>
