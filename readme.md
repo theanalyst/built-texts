@@ -15,7 +15,4 @@ Also these theme supports an optional footer content under the
 variable name `COLOPHON` (if set to true). `COLOPHON_TITLE` and
 `COLOPHON_CONTENT` will help in setting a footer content 
 
-A sample is displayed below
-![screenshot]('screenshot.png')
-
 [1]: theanalyst.github.com
