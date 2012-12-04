@@ -40,7 +40,7 @@
 .blog-header {
   position: relative;
   padding: 16px 0;
-  background-color:#E9EFF6;
+  background-color:#EEE;
 }
 
 .navbar .nav > li > a { color: #FF0F00; }
@@ -50,7 +50,8 @@
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
     color: #0A5693;
-    background-color:#E9EFF6
+    background-color:#bbb 
+/*    background-color:#E9EFF6*/
 } 
 #blog-nav{
     padding: 5px 0;
@@ -59,12 +60,12 @@
 }
 /* Styling for elements */
 a {color: #0A5693} 
-body {font-family: 'Gudea'; font-size: 16px; line-height:20px}
-p { font-family: 'Gudea','Bitter','Telex'; font-size: 16px; line-height: 20px; margin-top: 0.8em; margin-bottom: 0.8em; text-align: justify}
+body {font-family: 'Gudea'; font-size: 16px; line-height: 1.2em}
+p { font-family: 'Gudea','Bitter','Telex'; font-size: 16px; line-height: 1.2em; margin-top: 0.8em; margin-bottom: 0.8em; text-align: justify}
 li { line-height: 1.6em; }
 h3 { font-family: 'Alegreya SC'; font-weight: normal}
-h2 { font-family: 'Alegreya SC'; color: #0A5693; font-weight: normal }
-h1 { font-family: 'Alegreya SC'; font-weight: normal;}
+h2 { font-family: 'Alegreya SC'; color: #0A5693; font-weight: normal; font-size:32 px }
+h1 { font-family: 'Alegreya SC'; font-weight: normal; font-size: 42px}
 h1,h2,h3,h4,h5,h6 { color: #000001; margin-bottom: 0px}
 .table th, .table td { line-height: 1.3em; }
 
@@ -90,7 +91,7 @@ h1,h2,h3,h4,h5,h6 { color: #000001; margin-bottom: 0px}
 }
 
 /* Article summary */
-.summary { margin-bottom: 2em; margin-top: 0.8em; font-size: 14px }
+.summary { margin-bottom: 2em; margin-top: 0.8em; font-size: 16px; line-height: 1.2em }
 .summary pre { display: none; }
 
 /* Styling for Sidebar */
