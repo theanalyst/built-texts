@@ -1,5 +1,13 @@
 {% extends "base.html" %}
-{% block title %} {% endblock %}
+
+{% block title %}
+    {{ page.title|striptags|trim|title }} - {{ SITENAME }}
+{% endblock %}
+
+{% block description %}
+    {{ page.summary|striptags|trim }}
+{% endblock %}
+
 {% block content %}        
 <section id="content" class="body span10">    
     <h2 class="content-title">{{ page.title }}</h2>
